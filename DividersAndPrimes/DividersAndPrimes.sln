@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DividersAndPrimesTest", "DividersAndPrimesTest\DividersAndPrimesTest.csproj", "{44AE52D8-DC45-4FD4-A278-B5F0A57DFAE7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DividersAndPrimes.API", "DividersAndPrimes.API\DividersAndPrimes.API.csproj", "{E0A100EB-AFB4-4EB5-9D46-CE49CB0D513A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DividersAndPrimes.Service", "DividersAndPrimes.Service\DividersAndPrimes.Service.csproj", "{6BA138CE-4CA3-4B89-8850-45B018A341BC}"
@@ -22,10 +20,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{44AE52D8-DC45-4FD4-A278-B5F0A57DFAE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44AE52D8-DC45-4FD4-A278-B5F0A57DFAE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44AE52D8-DC45-4FD4-A278-B5F0A57DFAE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44AE52D8-DC45-4FD4-A278-B5F0A57DFAE7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E0A100EB-AFB4-4EB5-9D46-CE49CB0D513A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E0A100EB-AFB4-4EB5-9D46-CE49CB0D513A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0A100EB-AFB4-4EB5-9D46-CE49CB0D513A}.Release|Any CPU.ActiveCfg = Release|Any CPU

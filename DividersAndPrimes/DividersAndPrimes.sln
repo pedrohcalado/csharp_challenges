@@ -3,12 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DividersAndPrimes", "DividersAndPrimes\DividersAndPrimes.csproj", "{B086E186-E6C4-4B26-BB95-7FAB632CC074}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DividersAndPrimesTest", "DividersAndPrimesTest\DividersAndPrimesTest.csproj", "{44AE52D8-DC45-4FD4-A278-B5F0A57DFAE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DividersAndPrimesTest", "DividersAndPrimesTest\DividersAndPrimesTest.csproj", "{44AE52D8-DC45-4FD4-A278-B5F0A57DFAE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DividersAndPrimes.API", "DividersAndPrimes.API\DividersAndPrimes.API.csproj", "{E0A100EB-AFB4-4EB5-9D46-CE49CB0D513A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DividersAndPrimes.Service", "DividersAndPrimes.Service\DividersAndPrimes.Service.csproj", "{6BA138CE-4CA3-4B89-8850-45B018A341BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DividersAndPrimes.Console", "DividersAndPrimes.Console\DividersAndPrimes.Console.csproj", "{CCAD83EE-1E80-41E8-B237-06219EAD689F}"
 	ProjectSection(ProjectDependencies) = postProject
-		{B086E186-E6C4-4B26-BB95-7FAB632CC074} = {B086E186-E6C4-4B26-BB95-7FAB632CC074}
+		{6BA138CE-4CA3-4B89-8850-45B018A341BC} = {6BA138CE-4CA3-4B89-8850-45B018A341BC}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DividersAndPrimes.Test", "DividersAndPrimes.Test\DividersAndPrimes.Test.csproj", "{10727CDD-9357-4E70-9877-A6C7A6096021}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,14 +22,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B086E186-E6C4-4B26-BB95-7FAB632CC074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B086E186-E6C4-4B26-BB95-7FAB632CC074}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B086E186-E6C4-4B26-BB95-7FAB632CC074}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B086E186-E6C4-4B26-BB95-7FAB632CC074}.Release|Any CPU.Build.0 = Release|Any CPU
 		{44AE52D8-DC45-4FD4-A278-B5F0A57DFAE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{44AE52D8-DC45-4FD4-A278-B5F0A57DFAE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44AE52D8-DC45-4FD4-A278-B5F0A57DFAE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44AE52D8-DC45-4FD4-A278-B5F0A57DFAE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A100EB-AFB4-4EB5-9D46-CE49CB0D513A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A100EB-AFB4-4EB5-9D46-CE49CB0D513A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A100EB-AFB4-4EB5-9D46-CE49CB0D513A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A100EB-AFB4-4EB5-9D46-CE49CB0D513A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BA138CE-4CA3-4B89-8850-45B018A341BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA138CE-4CA3-4B89-8850-45B018A341BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA138CE-4CA3-4B89-8850-45B018A341BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA138CE-4CA3-4B89-8850-45B018A341BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCAD83EE-1E80-41E8-B237-06219EAD689F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCAD83EE-1E80-41E8-B237-06219EAD689F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCAD83EE-1E80-41E8-B237-06219EAD689F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCAD83EE-1E80-41E8-B237-06219EAD689F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10727CDD-9357-4E70-9877-A6C7A6096021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10727CDD-9357-4E70-9877-A6C7A6096021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10727CDD-9357-4E70-9877-A6C7A6096021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10727CDD-9357-4E70-9877-A6C7A6096021}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

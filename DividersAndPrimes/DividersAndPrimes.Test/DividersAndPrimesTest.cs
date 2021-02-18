@@ -1,18 +1,18 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DividersAndPrimesNS;
+using DividersAndPrimes.Service;
 using System.Collections.Generic;
 using System;
 
 namespace DividersAndPrimesTest
 {
     [TestClass]
-    public class DividersTest
+    public class DividersAndPrimesTest
     {
         [TestMethod]
         public void TestGetDividers_ShouldReturnListWithDividers()
         {
             DividersAndPrimes entry = new DividersAndPrimes();
-            List<int> expected = new List<int>{1, 3, 5, 9, 15, 45};
+            List<int> expected = new List<int> { 1, 3, 5, 9, 15, 45 };
             List<int> actual = entry.GetDividers(45);
             Assert.AreEqual(String.Join(" ", expected), String.Join(" ", actual));
         }

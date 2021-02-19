@@ -7,13 +7,13 @@ namespace DividersAndPrimesNS
     {
         static void Main(string[] args)
         {
-            Menu();
-        }
-
-        static void Menu()
-        {
             Console.WriteLine("Digite um número inteiro:");
             var entryValue = Console.ReadLine();
+            Menu(entryValue);
+        }
+
+        public static void Menu(string entryValue)
+        {
             try
             {
                 var dividers = MainClass.GetDividers(int.Parse(entryValue));
@@ -22,14 +22,16 @@ namespace DividersAndPrimesNS
                 Console.WriteLine($"Números divisores: {String.Join(" ", dividers)}");
                 Console.WriteLine($"Divisores primos: {String.Join(" ", primeDividers)}");
                 Console.WriteLine("----------------------------------------------");
-                Menu();
+                Console.WriteLine("Digite um número inteiro:");
+                Menu(Console.ReadLine());
             }
             catch (Exception e)
             {
                 Console.WriteLine(" ");
                 Console.WriteLine($"Error: {e.Message}");
                 Console.WriteLine("----------------------------------------------");
-                Menu();
+                Console.WriteLine("Digite um número inteiro:");
+                Menu(Console.ReadLine());
             }
         }
     }

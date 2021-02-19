@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DividersAndPrimes.Console\DividersAndPrimes.Console.csproj" />
     <ProjectReference Include="..\DividersAndPrimes.Service\DividersAndPrimes.Service.csproj" />
   </ItemGroup>
 

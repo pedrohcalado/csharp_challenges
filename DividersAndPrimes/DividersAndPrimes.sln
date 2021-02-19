@@ -13,6 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DividersAndPrimes.Console",
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DividersAndPrimes.Test", "DividersAndPrimes.Test\DividersAndPrimes.Test.csproj", "{10727CDD-9357-4E70-9877-A6C7A6096021}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CCAD83EE-1E80-41E8-B237-06219EAD689F} = {CCAD83EE-1E80-41E8-B237-06219EAD689F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -34,3 +34,6 @@
 
 - Testes:
   - Como toda lógica do sistema está concentrada basicamente da camada de service, optou-se por testar somente os métodos desta camada, verificando se estes estão retornando os valores esperados baseado em um valor de entrada.
+
+## Instruções para Execução
+- Para executar o projeto do console ou a API, basta entrar dentro da pasta de um deles e rodar o comando ```dotnet run```

@@ -35,7 +35,8 @@
 - Testes:
   - Como toda lógica do sistema está concentrada basicamente da camada de service, optou-se por testar somente os métodos desta camada, verificando se estes estão retornando os valores esperados baseado em um valor de entrada.
 
-## Instruções para Execução
+## Instruções de Execução
+  
 ### API em produção
 O serviço em questão é fornecido por meio de uma [API RESTful](https://en.wikipedia.org/wiki/Application_programming_interface) e foi construído com o intuito de se obter os valores dos divisores e dos divisores primos de um número inteiro do qual se deseja saber tais informações.
 - URL base
@@ -76,6 +77,23 @@ O serviço em questão é fornecido por meio de uma [API RESTful](https://en.wik
     }
     ```
 
-### Console
+### Executando localmente
+- Instruções gerais
+  - Clonar o repositório por meio do comando ```git clone <url_do_repositorio>``` 
+  - Para todos os casos, deve-se ter o o framework [.NET](https://dotnet.microsoft.com/download) instalado na máquina
 
-### Testes
+- Console
+  1. Acessar via console a pasta ```DividersAndPrimes.Console```
+  2. Executar o comando ```dotnet run```
+ 
+- API
+  1. Acessar via console a pasta ```DividersAndPrimes.API```
+  2. Executar o comando ```dotnet run```
+  3. Com isso, sua API deve estar no ar por meio da URL base ```https://localhost:5001/DividersAndPrimes```
+  4. Os métodos, parâmetros e respostas seguem os mesmos dos demonstrados na seção de **API em produção**
+
+- Testes
+  - Existem dois testes disponíveis no projeto, o teste do Service (responsável por toda lógica) e o teste da API
+  - Teste do Service: /DividersAndPrimes.Test
+  - Teste da API: /DividersAndPrimesAPI.Test
+  - Para executar ambos, basta acessar a pasta na qual se deseja executar o teste e rodar o comando ```dotnet test``` via console

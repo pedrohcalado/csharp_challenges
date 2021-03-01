@@ -36,4 +36,46 @@
   - Como toda lógica do sistema está concentrada basicamente da camada de service, optou-se por testar somente os métodos desta camada, verificando se estes estão retornando os valores esperados baseado em um valor de entrada.
 
 ## Instruções para Execução
-- Para executar o projeto do console ou a API, basta entrar dentro da pasta de um deles e rodar o comando ```dotnet run```
+### API em produção
+O serviço em questão é fornecido por meio de uma [API RESTful](https://en.wikipedia.org/wiki/Application_programming_interface) e foi construído com o intuito de se obter os valores dos divisores e dos divisores primos de um número inteiro do qual se deseja saber tais informações.
+- URL base
+  ```
+  https://dividersandprimesapi20210225083644.azurewebsites.net/DividersAndPrimes
+  ```
+- Método
+  ```
+  GET
+  ```
+- Query param obrigatório </br>
+  ```number=[integer]```
+- Resposta de sucesso
+  - /GET https://dividersandprimesapi20210225083644.azurewebsites.net/DividersAndPrimes?number=45
+  - Code: 200 </br>
+    Exemplo de conteúdo:
+    ```
+    {
+      "entryValue": 45,
+      "dividers": "1 3 5 9 15 45",
+      "dividersAndPrimes": "3 5"
+    }
+    ```
+- Resposta de erro
+  - Code: 400 </br>
+    Exemplo de conteúdo:
+    ```
+    {
+      "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+      "title": "One or more validation errors occurred.",
+      "status": 400,
+      "traceId": "00-9c93ef2cb7dcd84db9fbe920687781e7-fc5da2182a015041-00",
+      "errors": {
+        "number": [
+          "The value 'as' is not valid."
+        ]
+      }
+    }
+    ```
+
+### Console
+
+### Testes
